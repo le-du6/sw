@@ -1,2 +1,0 @@
-# sw
-Created with CodeSandbox

@@ -1,0 +1,88 @@
+body {
+  background-color: #fb1;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #fb1;
+}
+
+.btn {
+  user-select: none;
+  display: inline-block;
+  margin: 10px;
+  background-color: #888;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.dec {
+  background-color: white;
+  border: 2px #fb1 solid;
+  color: #fb1;
+}
+.dec:hover {
+  background-color: #fb1;
+  border: 2px #fb1 solid;
+  color: white;
+}
+.inc {
+  background-color: white;
+  border: 2px #c1a solid;
+  color: #c1a;
+}
+.inc:hover {
+  background-color: #c1a;
+  border: 2px #c1a solid;
+  color: white;
+}
+.reset:hover {
+  background-color: white;
+  //border: 2px #333 solid;
+  color: #333;
+}
+.reset {
+  background-color: #333;
+  //border: 2px #333 solid;
+  color: white;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  margin: 6px;
+  border: 6px solid #ddd;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ddd transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
